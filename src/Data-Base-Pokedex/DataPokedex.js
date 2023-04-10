@@ -2,7 +2,7 @@ const Pokedex = [
   {
     Name: "Bulbasaur",
     Number: "#001",
-    Image: "../assets/bulbasaur.png",
+    Image: "src/assets/bulbasaur.png",
     Main_Color: "#74CB48",
     Secondary_Color: "#A439E",
     Weigth: "6.9kg",
@@ -27,7 +27,7 @@ const Pokedex = [
   {
     Name: "Charmander",
     Number: "#004",
-    Image: "../assets/charmander.png",
+    Image: "src/assets/charmander.png",
     Main_Color: "#f57D31",
     Secondary_Color: "",
     Weigth: "8.5kg",
@@ -51,7 +51,7 @@ const Pokedex = [
   {
     Name: "Squirtle",
     Number: "#007",
-    Image: "../assets/squirtle.png",
+    Image: "src/assets/squirtle.png",
     Main_Color: "#6493EB",
     Secondary_Color: "",
     Weigth: "9kg",
@@ -76,7 +76,7 @@ const Pokedex = [
   {
     Name: "Butterfree",
     Number: "#012",
-    Image: "../assets/butterfree.png",
+    Image: "src/assets/butterfree.png",
     Main_Color: "#A7B723",
     Secondary_Color: "#A891EC",
     Weigth: "32kg",
@@ -100,7 +100,7 @@ const Pokedex = [
   {
     Name: "Pikachu",
     Number: "#025",
-    Image: "../assets/pikachu.png",
+    Image: "src/assets/pikachu.png",
     Main_Color: "#F9CF30",
     Secondary_Color: "",
     Weigth: "6kg",
@@ -124,7 +124,7 @@ const Pokedex = [
   {
     Name: "Gastly",
     Number: "#092",
-    Image: "../assets/gastly.png",
+    Image: "src/assets/gastly.png",
     Main_Color: "#70559B",
     Secondary_Color: "#A43E93",
     Weigth: "0.1kg",
@@ -148,7 +148,7 @@ const Pokedex = [
   {
     Name: "Ditto",
     Number: "#132",
-    Image: "../assets/ditto.png",
+    Image: "src/assets/ditto.png",
     Main_Color: "#AAA67F",
     Secondary_Color: "",
     Weigth: "4.0kg",
@@ -172,7 +172,7 @@ const Pokedex = [
   {
     Name: "Mew",
     Number: "#152",
-    Image: "../assets/mew.png",
+    Image: "src/assets/mew.png",
     Main_Color: "#FB5584",
     Secondary_Color: "",
     Weigth: "4.0kg",
@@ -195,7 +195,7 @@ const Pokedex = [
   {
     Name: "Aaron",
     Number: "#304",
-    Image: "../assets/aron.png",
+    Image: "src/assets/aron.png",
     Main_Color: "#B7B9D0",
     Secondary_Color: "#B69E31",
     Weigth: "60kg",
