@@ -1,0 +1,10 @@
+.cardContainer{
+width: 20rem;
+height: 30rem;
+border: 5px solid black;
+   
+}
+
+.classes{
+    display: flex
+}

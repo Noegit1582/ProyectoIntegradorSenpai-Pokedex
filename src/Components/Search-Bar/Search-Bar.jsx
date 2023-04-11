@@ -1,11 +1,14 @@
 import React from "react";
 import "./SearchBar.css";
+import search from "../../assets/search.svg";
 
 function SearchBar() {
   return (
     <>
-      <input type="text" />
-      <button className="btnFilter">#</button>
+      <div className="searchBar">
+        <input type="text" className="filterPokemon" placeholder="Search" />
+        <button className="btnFilter">#</button>
+      </div>
     </>
   );
 }

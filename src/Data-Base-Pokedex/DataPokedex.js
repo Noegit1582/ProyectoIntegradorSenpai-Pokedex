@@ -193,7 +193,7 @@ const Pokedex = [
     },
   },
   {
-    Name: "Aaron",
+    Name: "Aron",
     Number: "#304",
     Image: "src/assets/aron.png",
     Main_Color: "#B7B9D0",

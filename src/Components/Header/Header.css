@@ -1,13 +1,16 @@
 .container{
+
     display: flex;
-    background-color: #C12239;
+    background-color: #DC0A2D;
     align-items: center;
+    padding: 2rem;
 }
 .container2{
     display: flex;
-    background-color: #C12239;
+    background-color: #DC0A2D;
     align-items: center;
     justify-content: center;
+
 }
 
 .pokeball{
