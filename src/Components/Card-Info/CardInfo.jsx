@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./CardInfo.css";
-
+import arrowLeft from "../../assets/arrow-left.svg";
 import { useParams } from "react-router-dom";
 import Pokeball from "../../assets/Pokeball.png";
 import Pokedex from "../../Data-Base-Pokedex/DataPokedex.js";
@@ -18,9 +18,10 @@ function CardInfo(props) {
       className="cardContainer"
       style={{ backgroundColor: pokemon.Main_Color }}
     >
-      este es mi div
-      <div className="">
-        <button src=""></button>
+      <div className="tokemItems">
+        <button className="arrowCardInfo">
+          <img src={arrowLeft} alt="" />
+        </button>
         <h3>{pokemon.Name}</h3>
         <p>{pokemon.Number}</p>
       </div>

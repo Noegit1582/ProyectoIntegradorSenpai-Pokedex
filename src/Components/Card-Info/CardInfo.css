@@ -5,6 +5,20 @@ border: 5px solid black;
    
 }
 
+
+.arrowCardInfo{
+
+    background: none;
+    border: none;
+}
+
+.tokemItems{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
 .classes{
     display: flex
 }
