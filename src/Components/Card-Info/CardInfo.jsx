@@ -14,8 +14,11 @@ function CardInfo(props) {
 
   console.log(name);
   return (
-    <div className="cardContainer">
-      {pokemon.Main_Color}
+    <div
+      className="cardContainer"
+      style={{ backgroundColor: pokemon.Main_Color }}
+    >
+      este es mi div
       <div className="">
         <button src=""></button>
         <h3>{pokemon.Name}</h3>
@@ -23,12 +26,10 @@ function CardInfo(props) {
       </div>
       <img src={Pokeball} alt="" />
       <img src={pokemon.Image} alt="" />
-
       <div className="classes">
         <p>{pokemon.Main_Class}</p>
         <p>{pokemon.Secondary_Class}</p>
       </div>
-
       <p></p>
     </div>
   );
