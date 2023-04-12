@@ -66,6 +66,67 @@ function CardInfo(props) {
             <p className="spaceParagraph">Moves</p>
           </div>
         </article>
+        <p className="pokemonDescription">{pokemon.Description}</p>
+        <h5 className="headerabout" style={{ color: pokemon.Main_Color }}>
+          Base Stats
+        </h5>
+
+        <article className="footerStatics">
+          <div className="staticsName">
+            <p style={{ color: pokemon.Main_Color }}>HP</p>
+            <p style={{ color: pokemon.Main_Color }}>ATK</p>
+            <p style={{ color: pokemon.Main_Color }}>DEF</p>
+            <p style={{ color: pokemon.Main_Color }}>SATK</p>
+            <p style={{ color: pokemon.Main_Color }}>SDEF</p>
+            <p style={{ color: pokemon.Main_Color }}>SPD</p>
+          </div>
+          <div className="staticsNumber">
+            <p>{pokemon.Stats.HP}</p>
+            <p>{pokemon.Stats.ATK}</p>
+            <p>{pokemon.Stats.DEF}</p>
+            <p>{pokemon.Stats.SATK}</p>
+            <p>{pokemon.Stats.SDEF}</p>
+            <p>{pokemon.Stats.SPD}</p>
+          </div>
+          <div className="staticBar">
+            <progress
+              max="200"
+              value={pokemon.Stats.HP}
+              className="barProgress"
+              style={{ accentColor: pokemon.Main_Color }}
+            ></progress>
+            <progress
+              max="200"
+              style={{ accentColor: pokemon.Main_Color }}
+              value={pokemon.Stats.ATK}
+              className="barProgress"
+            ></progress>
+            <progress
+              max="200"
+              style={{ accentColor: pokemon.Main_Color }}
+              value={pokemon.Stats.DEF}
+              className="barProgress"
+            ></progress>
+            <progress
+              max="200"
+              style={{ accentColor: pokemon.Main_Color }}
+              value={pokemon.Stats.SATK}
+              className="barProgress"
+            ></progress>
+            <progress
+              max="200"
+              style={{ accentColor: pokemon.Main_Color }}
+              value={pokemon.Stats.SDEF}
+              className="barProgress"
+            ></progress>
+            <progress
+              max="200"
+              style={{ accentColor: pokemon.Main_Color }}
+              value={pokemon.Stats.SPD}
+              className="barProgress"
+            ></progress>
+          </div>
+        </article>
       </div>
     </div>
   );
