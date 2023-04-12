@@ -4,7 +4,7 @@ const Pokedex = [
     Number: "#001",
     Image: "src/assets/bulbasaur.png",
     Main_Color: "#74CB48",
-    Secondary_Color: "#A439E",
+    Secondary_Color: "#A43E9E",
     Weigth: "6.9kg",
     Height: "0.7m",
     Main_Class: "Grass",

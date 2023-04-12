@@ -10,7 +10,7 @@ margin-top: 1rem;
     
     width: 28vw;
     height: 13vh;
-    background: linear-gradient(to top, #E0E0E0 0%, #E0E0E0 50%, #EFEFEF 50%, #EFEFEF  100%);
+    background: linear-gradient(to top, #e0e0e0 0%, #E0E0E0 50%, #EFEFEF 50%, #EFEFEF  100%);
     border-radius: 20px;
     box-shadow: 5px 5px 5px rgb(132, 130, 130); 
     margin: 5px;
@@ -34,6 +34,7 @@ margin-top: 1rem;
 .pokemonNumber{
     display: flex;
     font-size: 0.5rem;
+    margin-left: 4rem;
   
 }
 

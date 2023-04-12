@@ -1,24 +1,115 @@
-.cardContainer{
-width: 20rem;
-height: 30rem;
-border: 5px solid black;
-   
+/* * {
+  border: 1px solid black;
+} */
+
+.cardContainer {
+  width: 100vw;
+  height: 100vh;
+  border: 5px solid black;
 }
 
-
-.arrowCardInfo{
-
-    background: none;
-    border: none;
+.arrowCardInfo {
+  background: none;
+  border: none;
 }
 
-.tokemItems{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-
+.tokemItems {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  color: #ffff;
+  padding-top: 1rem;
 }
-.classes{
-    display: flex
+
+.pokeName {
+  margin-right: 4em;
+}
+
+.pokeBall {
+  max-width: 15rem;
+  margin-left: 9rem;
+  opacity: 10%;
+  filter: invert(100%) sepia(0%) saturate(7445%) hue-rotate(39deg)
+    brightness(112%) contrast(112%);
+  z-index: 2;
+  position: absolute;
+  top: 10px;
+}
+
+.pokeImage {
+  position: absolute;
+  z-index: 5;
+  top: 5.5rem;
+  left: 6rem;
+}
+
+.whiteContent {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: center;
+
+  width: 98%;
+  height: 70vh;
+  background-color: white;
+  margin: 12rem auto 0 auto;
+  border-radius: 5px;
+}
+.classes {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+.mainClass,
+.secondaryClass {
+  width: auto;
+  height: 1.6rem;
+  border-radius: 20px;
+  padding: 4px 13px 0px 13px;
+  margin-top: 45px;
+  margin-left: 10px;
+  margin-right: 5px;
+  color: #ffff;
+  font-size: 13px;
+}
+
+.headerabout {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.contentAbout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+.infoAbout1,
+.infoAbout2 {
+  border-right: 1px solid #c4c1c1;
+
+  width: 5rem;
+  margin-right: 20px;
+  padding-right: 5px;
+  padding-left: 10px;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.spaceImage {
+  padding-right: 15px;
+}
+.spaceParagraph {
+  text-align: center;
+  font-size: 9px;
+  opacity: 80%;
+}
+
+.spaceParagraph1,
+.spaceParagraph2 {
+  margin-left: 10px;
 }
