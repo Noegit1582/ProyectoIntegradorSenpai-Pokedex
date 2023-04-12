@@ -4,7 +4,7 @@ import "./Header.css";
 import Pokeball from "../../assets/Pokeball.png";
 import SearchBar from "../Search-Bar/Search-Bar";
 
-function Header() {
+function Header(props) {
   return (
     <>
       <div className="container">
@@ -12,7 +12,7 @@ function Header() {
         <h1>Pokédex</h1>
       </div>
       <div className="container2">
-        <SearchBar />
+        <SearchBar pokedex={props.pokedex} setPokedex={props.setPokedex} />
       </div>
     </>
   );

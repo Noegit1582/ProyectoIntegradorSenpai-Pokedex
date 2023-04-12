@@ -8,10 +8,10 @@ import CardInfo from "./Components/Card-Info/CardInfo";
 
 function App() {
   console.log(Pokedex);
-  const pokedex = Pokedex;
+  const [pokedex, setPokedex] = useState(Pokedex);
   return (
     <div className="App">
-      <Header />
+      <Header pokedex={pokedex} setPokedex={setPokedex} />
       <main>
         {pokedex.map((pokemon) => {
           return <Card pokemon={pokemon} />;
