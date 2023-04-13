@@ -32,22 +32,3 @@ function SearchBar(props) {
 }
 
 export default SearchBar;
-
-/* const [searchTerm, setSearchTerm] = useState('');
-
-  const handleSearchChange = event => {
-    setSearchTerm(event.target.value);
-  };
-
-  const filteredPokemon = pokemonList.filter(pokemon => {
-    const regex = new RegExp(searchTerm, 'gi');
-    return pokemon.name.match(regex);
-  });
-
-  return (
-    <div>
-      <input type="text" value={searchTerm} onChange={handleSearchChange} placeholder="Buscar por nombre" />
-     
-    </div>
-  );
-} */
