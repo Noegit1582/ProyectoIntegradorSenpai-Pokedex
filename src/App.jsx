@@ -7,14 +7,15 @@ import Pokedex from "../src/Data-Base-Pokedex/DataPokedex.js";
 import CardInfo from "./Components/Card-Info/CardInfo";
 
 function App() {
-  console.log(Pokedex);
+  /*  console.log(Pokedex); */
   const [pokedex, setPokedex] = useState(Pokedex);
+
   return (
     <div className="App">
       <Header pokedex={pokedex} setPokedex={setPokedex} />
       <main>
         {pokedex.map((pokemon) => {
-          return <Card pokemon={pokemon} />;
+          return <Card key={pokemon.Number} pokemon={pokemon} />;
         })}
       </main>
     </div>

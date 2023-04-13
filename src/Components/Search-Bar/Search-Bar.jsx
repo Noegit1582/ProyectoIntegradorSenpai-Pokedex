@@ -3,16 +3,18 @@ import "./SearchBar.css";
 import search from "../../assets/search.svg";
 
 import { useState } from "react";
+import Pokedex from "../../Data-Base-Pokedex/DataPokedex";
 
 function SearchBar(props) {
-  const handleChange = (e) => {
-    e.preventDefault();
-    const pokemonFilter = props.pokedex.filter((item) => {
-      return item.Name.includes(e.target.value);
-    });
-    props.setPokedex(pokemonFilter);
-    console.log(pokemonFilter);
-  };
+  function handleChange(e) {
+    /*  e.preventDefault(); */
+    console.log(e.target.value);
+    props.setPokedex(
+      Pokedex.filter((item) => {
+        return item.Name.toLowerCase().includes(e.target.value);
+      })
+    );
+  }
 
   return (
     <>
