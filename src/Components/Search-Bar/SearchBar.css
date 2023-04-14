@@ -1,9 +1,7 @@
-.searchBar{
-    width: 30rem;
-    display: flex;
-   justify-content: space-around;
-   
-
+.searchBar {
+  width: 30rem;
+  display: flex;
+  justify-content: space-around;
 }
 
 /* .imagSearch{
@@ -12,26 +10,68 @@
     z-index: 2;
 } */
 
-.filterPokemon{
-    width: 18rem;
-    height: 2rem;
-    border-radius: 15px;
-    border: none;
-    padding-left: 40px;
-    z-index: 0.8;
-    background-image: url("../../assets/search.svg" );
-    background-repeat: no-repeat;
-    background-size: 30px;
-   
-  
+.filterPokemon {
+  width: 18rem;
+  height: 2rem;
+  border-radius: 15px;
+  border: none;
+  padding-left: 40px;
+  z-index: 0.8;
+  background-image: url("../../assets/search.svg");
+  background-repeat: no-repeat;
+  background-size: 30px;
 }
 
-.btnFilter{
-    width: 2rem;
-    height: 2rem;
-    border-radius: 30px;
-    border: none;
-    color:  #DC0A2D;
-    z-index: 0.8;
-    
+.btnFilter {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 30px;
+  border: none;
+  color: #dc0a2d;
+  z-index: 0.8;
+  cursor: pointer;
+}
+
+/* *************** FILTER STYLES ************* */
+
+.listFilter {
+  list-style: none;
+}
+.divContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 120px;
+  height: 120px;
+  background-color: #dc0a2d;
+  border-radius: 5px;
+  border: 2px solid #0b0a0a;
+}
+
+.divFilter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 105px;
+  height: 65px;
+  background-color: #ffff;
+  border-radius: 5px;
+}
+li {
+  font-size: 12px;
+  margin-left: 20px;
+}
+
+ul p {
+  color: #ffff;
+  font-size: 12px;
+  padding-bottom: 20px;
+}
+.spaceRadioButton {
+  margin-left: 5px;
+}
+
+.radioButton {
+  accent-color: #dc0a2d;
 }
