@@ -47,6 +47,11 @@
   background-color: #dc0a2d;
   border-radius: 5px;
   border: 2px solid #0b0a0a;
+
+  z-index: 1;
+  position: absolute;
+  margin-left: 175px;
+  margin-top: -20px;
 }
 
 .divFilter {

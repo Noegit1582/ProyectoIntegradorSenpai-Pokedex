@@ -1,5 +1,6 @@
 const Pokedex = [
   {
+    id: 1,
     Name: "Bulbasaur",
     Number: "#001",
     Image: "src/assets/bulbasaur.png",
@@ -25,6 +26,7 @@ const Pokedex = [
   },
 
   {
+    id: 2,
     Name: "Charmander",
     Number: "#004",
     Image: "src/assets/charmander.png",
@@ -49,6 +51,7 @@ const Pokedex = [
     },
   },
   {
+    id: 3,
     Name: "Squirtle",
     Number: "#007",
     Image: "src/assets/squirtle.png",
@@ -74,6 +77,7 @@ const Pokedex = [
   },
 
   {
+    id: 4,
     Name: "Butterfree",
     Number: "#012",
     Image: "src/assets/butterfree.png",
@@ -98,6 +102,7 @@ const Pokedex = [
   },
 
   {
+    id: 5,
     Name: "Pikachu",
     Number: "#025",
     Image: "src/assets/pikachu.png",
@@ -122,6 +127,7 @@ const Pokedex = [
   },
 
   {
+    id: 6,
     Name: "Gastly",
     Number: "#092",
     Image: "src/assets/gastly.png",
@@ -146,6 +152,7 @@ const Pokedex = [
   },
 
   {
+    id: 7,
     Name: "Ditto",
     Number: "#132",
     Image: "src/assets/ditto.png",
@@ -170,6 +177,7 @@ const Pokedex = [
   },
 
   {
+    id: 8,
     Name: "Mew",
     Number: "#152",
     Image: "src/assets/mew.png",
@@ -193,6 +201,7 @@ const Pokedex = [
     },
   },
   {
+    id: 9,
     Name: "Aron",
     Number: "#304",
     Image: "src/assets/aron.png",
