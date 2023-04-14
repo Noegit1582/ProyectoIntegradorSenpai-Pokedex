@@ -11,20 +11,36 @@ import Pokedex from "../../Data-Base-Pokedex/DataPokedex.js";
 function CardInfo(props) {
   const { name } = useParams();
 
-  const navigate = useNavigate();
-
   const pokemon = Pokedex.find((pokemon) => {
     return pokemon.Name === name;
   });
 
+  const [pokemonTest, setPokemonTest] = useState(pokemon);
+  const navigate = useNavigate();
+
   const handlePrevious = () => {
-    const previousname = pokemon.id - 1;
-    navigate(`/${previousname}`);
+    const previousid = pokemon.id - 1;
+    const pokemonPrevious = Pokedex.find(
+      (pokemon) => pokemon.id === previousid
+    );
+    if (pokemonPrevious) {
+      setPokemonTest(pokemonPrevious);
+      navigate(`/${pokemonPrevious.Name}`);
+    } else {
+      navigate(`/${pokemon.Name}`);
+    }
   };
   const handleNext = () => {
-    const nextname = pokemon.id + 1;
-    navigate(`/${nextname}`);
+    const forwardid = pokemon.id + 1;
+    const pokemonForward = Pokedex.find((pokemon) => pokemon.id === forwardid);
+    if (pokemonForward) {
+      setPokemonTest(pokemonForward);
+      navigate(`/${pokemonForward.Name}`);
+    } else {
+      navigate(`/${pokemon.Name}`);
+    }
   };
+
   return (
     <>
       <div>
@@ -33,110 +49,110 @@ function CardInfo(props) {
       </div>
       <div
         className="cardContainer"
-        style={{ backgroundColor: pokemon.Main_Color }}
+        style={{ backgroundColor: pokemonTest.Main_Color }}
       >
         <div className="tokemItems">
           <Link to="/">
             <img src={arrowLeft} alt="" />
           </Link>
-          <h3 className="pokeName">{pokemon.Name} </h3>
-          <p>{pokemon.Number}</p>
+          <h3 className="pokeName">{pokemonTest.Name} </h3>
+          <p>{pokemonTest.Number}</p>
         </div>
         <img src={Pokeball} alt="Pokeball" className="pokeBall" />
-        <img src={pokemon.Image} alt="Pokemon" className="pokeImage" />
+        <img src={pokemonTest.Image} alt="Pokemon" className="pokeImage" />
         <div className="whiteContent">
           <div className="classes">
             <p
               className="mainClass"
-              style={{ backgroundColor: pokemon.Main_Color }}
+              style={{ backgroundColor: pokemonTest.Main_Color }}
             >
-              {pokemon.Main_Class}
+              {pokemonTest.Main_Class}
             </p>
             <p
               className="secondaryClass"
-              style={{ backgroundColor: pokemon.Secondary_Color }}
+              style={{ backgroundColor: pokemonTest.Secondary_Color }}
             >
-              {pokemon.Secondary_Class}
+              {pokemonTest.Secondary_Class}
             </p>
           </div>
-          <h5 className="headerabout" style={{ color: pokemon.Main_Color }}>
+          <h5 className="headerabout" style={{ color: pokemonTest.Main_Color }}>
             About
           </h5>
           <article className="contentAbout">
             <div className="infoAbout1">
               <img src={weight} alt="weight" className="spaceImage" />
-              <p>{pokemon.Weigth}</p>
+              <p>{pokemonTest.Weigth}</p>
               <p className="spaceParagraph spaceParagraph1">Weight</p>
             </div>
             <div className="infoAbout2">
               <img src={height} alt="height" className="spaceImage" />
-              <p>{pokemon.Height}</p>
+              <p>{pokemonTest.Height}</p>
               <p className="spaceParagraph spaceParagraph2">Height</p>
             </div>
             <div className="infoAbout3">
-              <p>{pokemon.Main_Move}</p>
-              <p>{pokemon.Secondary_Move}</p>
+              <p>{pokemonTest.Main_Move}</p>
+              <p>{pokemonTest.Secondary_Move}</p>
 
               <p className="spaceParagraph">Moves</p>
             </div>
           </article>
-          <p className="pokemonDescription">{pokemon.Description}</p>
-          <h5 className="headerabout" style={{ color: pokemon.Main_Color }}>
+          <p className="pokemonDescription">{pokemonTest.Description}</p>
+          <h5 className="headerabout" style={{ color: pokemonTest.Main_Color }}>
             Base Stats
           </h5>
 
           <article className="footerStatics">
             <div className="staticsName">
-              <p style={{ color: pokemon.Main_Color }}>HP</p>
-              <p style={{ color: pokemon.Main_Color }}>ATK</p>
-              <p style={{ color: pokemon.Main_Color }}>DEF</p>
-              <p style={{ color: pokemon.Main_Color }}>SATK</p>
-              <p style={{ color: pokemon.Main_Color }}>SDEF</p>
-              <p style={{ color: pokemon.Main_Color }}>SPD</p>
+              <p style={{ color: pokemonTest.Main_Color }}>HP</p>
+              <p style={{ color: pokemonTest.Main_Color }}>ATK</p>
+              <p style={{ color: pokemonTest.Main_Color }}>DEF</p>
+              <p style={{ color: pokemonTest.Main_Color }}>SATK</p>
+              <p style={{ color: pokemonTest.Main_Color }}>SDEF</p>
+              <p style={{ color: pokemonTest.Main_Color }}>SPD</p>
             </div>
             <div className="staticsNumber">
-              <p>{pokemon.Stats.HP}</p>
-              <p>{pokemon.Stats.ATK}</p>
-              <p>{pokemon.Stats.DEF}</p>
-              <p>{pokemon.Stats.SATK}</p>
-              <p>{pokemon.Stats.SDEF}</p>
-              <p>{pokemon.Stats.SPD}</p>
+              <p>{pokemonTest.Stats.HP}</p>
+              <p>{pokemonTest.Stats.ATK}</p>
+              <p>{pokemonTest.Stats.DEF}</p>
+              <p>{pokemonTest.Stats.SATK}</p>
+              <p>{pokemonTest.Stats.SDEF}</p>
+              <p>{pokemonTest.Stats.SPD}</p>
             </div>
             <div className="staticBar">
               <progress
                 max="200"
-                value={pokemon.Stats.HP}
+                value={pokemonTest.Stats.HP}
                 className="barProgress"
-                style={{ accentColor: pokemon.Main_Color }}
+                style={{ accentColor: pokemonTest.Main_Color }}
               ></progress>
               <progress
                 max="200"
-                style={{ accentColor: pokemon.Main_Color }}
-                value={pokemon.Stats.ATK}
-                className="barProgress"
-              ></progress>
-              <progress
-                max="200"
-                style={{ accentColor: pokemon.Main_Color }}
-                value={pokemon.Stats.DEF}
+                style={{ accentColor: pokemonTest.Main_Color }}
+                value={pokemonTest.Stats.ATK}
                 className="barProgress"
               ></progress>
               <progress
                 max="200"
-                style={{ accentColor: pokemon.Main_Color }}
-                value={pokemon.Stats.SATK}
+                style={{ accentColor: pokemonTest.Main_Color }}
+                value={pokemonTest.Stats.DEF}
                 className="barProgress"
               ></progress>
               <progress
                 max="200"
-                style={{ accentColor: pokemon.Main_Color }}
-                value={pokemon.Stats.SDEF}
+                style={{ accentColor: pokemonTest.Main_Color }}
+                value={pokemonTest.Stats.SATK}
                 className="barProgress"
               ></progress>
               <progress
                 max="200"
-                style={{ accentColor: pokemon.Main_Color }}
-                value={pokemon.Stats.SPD}
+                style={{ accentColor: pokemonTest.Main_Color }}
+                value={pokemonTest.Stats.SDEF}
+                className="barProgress"
+              ></progress>
+              <progress
+                max="200"
+                style={{ accentColor: pokemonTest.Main_Color }}
+                value={pokemonTest.Stats.SPD}
                 className="barProgress"
               ></progress>
             </div>
