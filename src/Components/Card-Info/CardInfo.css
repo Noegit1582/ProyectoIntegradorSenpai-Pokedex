@@ -19,6 +19,7 @@
   justify-content: space-evenly;
   color: #ffff;
   padding-top: 1rem;
+  z-index: 2;
 }
 
 .pokeName {
@@ -38,9 +39,29 @@
 
 .pokeImage {
   position: absolute;
-  z-index: 5;
+  z-index: 2;
   top: 5.5rem;
   left: 6rem;
+}
+
+.carousel {
+  position: absolute;
+  margin-left: 3rem;
+  margin-top: 8rem;
+  background: none;
+
+  z-index: 2;
+}
+.btnRight,
+.btnLeft {
+  background: none;
+  border: none;
+
+  font-size: 50px;
+  color: #ffff;
+}
+.btnRight {
+  margin-left: 15rem;
 }
 
 .whiteContent {

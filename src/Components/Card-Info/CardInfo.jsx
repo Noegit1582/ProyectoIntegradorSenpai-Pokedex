@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./CardInfo.css";
+
 import arrowLeft from "../../assets/arrow-left.svg";
 import weight from "../../assets/Weight.svg";
 import height from "../../assets/Height.svg";
@@ -43,10 +44,6 @@ function CardInfo(props) {
 
   return (
     <>
-      <div>
-        <button onClick={handlePrevious}>boton previous</button>
-        <button onClick={handleNext}>boton next</button>
-      </div>
       <div
         className="cardContainer"
         style={{ backgroundColor: pokemonTest.Main_Color }}
@@ -55,11 +52,20 @@ function CardInfo(props) {
           <Link to="/">
             <img src={arrowLeft} alt="" />
           </Link>
+
           <h3 className="pokeName">{pokemonTest.Name} </h3>
           <p>{pokemonTest.Number}</p>
         </div>
         <img src={Pokeball} alt="Pokeball" className="pokeBall" />
         <img src={pokemonTest.Image} alt="Pokemon" className="pokeImage" />
+        <div className="carousel">
+          <button onClick={handlePrevious} className="btnLeft">
+            &lt;
+          </button>
+          <button onClick={handleNext} className="btnRight">
+            &gt;
+          </button>
+        </div>
         <div className="whiteContent">
           <div className="classes">
             <p
@@ -78,6 +84,7 @@ function CardInfo(props) {
           <h5 className="headerabout" style={{ color: pokemonTest.Main_Color }}>
             About
           </h5>
+
           <article className="contentAbout">
             <div className="infoAbout1">
               <img src={weight} alt="weight" className="spaceImage" />
