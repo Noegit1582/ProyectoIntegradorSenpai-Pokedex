@@ -79,12 +79,14 @@ function CardInfo(props) {
             >
               {pokemon.Main_Class}
             </p>
-            <p
-              className="secondaryClass"
-              style={{ backgroundColor: pokemon.Secondary_Color }}
-            >
-              {pokemon.Secondary_Class}
-            </p>
+            {pokemon.Secondary_Class ? (
+              <p
+                className="secondaryClass"
+                style={{ backgroundColor: pokemon.Secondary_Color }}
+              >
+                {pokemon.Secondary_Class}
+              </p>
+            ) : null}
           </div>
           <h5 className="headerabout" style={{ color: pokemon.Main_Color }}>
             About
@@ -130,6 +132,7 @@ function CardInfo(props) {
               <p>{pokemon.Stats.SDEF}</p>
               <p>{pokemon.Stats.SPD}</p>
             </div>
+
             <div className="staticBar">
               <progress
                 max="200"

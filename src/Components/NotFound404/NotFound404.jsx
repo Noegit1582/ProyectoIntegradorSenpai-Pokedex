@@ -9,7 +9,7 @@ const NotFound404 = () => {
   return (
     <main className="background">
       <h1 className="errorTitle">Oops! You seem to be lost.</h1>
-      <p className="errorParagraph">Here are a helpful link:</p>
+      <p className="errorParagraph">Here is a helpful link:</p>
       <Link style={{ fontSize: "25px" }} to="/">
         Home
       </Link>
