@@ -5,7 +5,6 @@
 .cardContainer {
   width: 100vw;
   height: 100vh;
-  border: 5px solid black;
 }
 
 .arrowCardInfo {
@@ -36,18 +35,23 @@
   position: absolute;
   top: 10px;
 }
+.contentImages {
+  display: flex;
+  justify-content: center;
+}
 
 .pokeImage {
-  position: absolute;
   z-index: 2;
   top: 5.5rem;
   left: 6rem;
+  position: absolute;
 }
 
 .carousel {
+  width: 100%;
   position: absolute;
   margin-left: 3rem;
-  margin-top: 8rem;
+
   background: none;
 
   z-index: 2;

@@ -1,23 +1,25 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
-.App{
- background-color:  #DC0A2D;
- height: 100vh;
-
+.App {
+  background-color: #dc0a2d;
+  height: 100vh;
 }
 
-main{
-  width: 98%;
-  height:51vh;
-  
- 
- background-color:   #ffff;
+main {
+  width: calc(100% - 8px);
+
+  background-color: #ffff;
   border-radius: 15px;
-  margin-left: 4px;
-  margin-top: 1.8rem;
+
+  margin: 1.8rem 4px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 12px;
+  padding: 20px;
 }

@@ -1,47 +1,34 @@
-.gContainer{
+.containerCard {
+  background: linear-gradient(
+    to top,
+    #e0e0e0 0%,
+    #e0e0e0 50%,
+    #efefef 50%,
+    #efefef 100%
+  );
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px rgb(132, 130, 130);
+  padding: 4px;
 
-display: inline-block;
-margin-left: 0.3rem;
-margin-top: 1rem;
-   
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.containerCard{
-    
-    width: 28vw;
-    height: 13vh;
-    background: linear-gradient(to top, #e0e0e0 0%, #E0E0E0 50%, #EFEFEF 50%, #EFEFEF  100%);
-    border-radius: 20px;
-    box-shadow: 5px 5px 5px rgb(132, 130, 130); 
-    margin: 5px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-
-    
-    
+.imgCard {
+  max-width: 4rem;
 }
 
-
-.imgCard{
-
-    max-width: 4rem;
+.pokemonNumber {
+  display: flex;
+  font-size: 0.5rem;
+  margin-left: 4rem;
 }
 
-.pokemonNumber{
-    display: flex;
-    font-size: 0.5rem;
-    margin-left: 4rem;
-  
-}
-
-.pokemonName{
-
-    font-size: 0.9rem;
-    margin: none;
-    font-family: 'Poppins', sans-serif;
-    font-weight: lighter;
+.pokemonName {
+  font-size: 0.9rem;
+  margin: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: lighter;
 }
