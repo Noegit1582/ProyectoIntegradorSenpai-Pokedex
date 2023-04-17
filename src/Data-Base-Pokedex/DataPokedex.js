@@ -160,8 +160,8 @@ const Pokedex = [
     Secondary_Color: "",
     Weigth: "4.0kg",
     Height: "0.3m",
-    Main_Class: "Ghost",
-    Secondary_Class: "Poison",
+    Main_Class: "Normal",
+    Secondary_Class: "",
     Main_Move: "Limber",
     Secondary_Move: "Imposter",
     Description:
